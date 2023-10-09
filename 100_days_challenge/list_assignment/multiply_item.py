@@ -13,4 +13,4 @@ lst = [15, 20, 25, 20, 10, 5]
 multiply = []
 for i in lst:
     multiply.append(i*2)
-print(multiply)
+print(multiply) 
