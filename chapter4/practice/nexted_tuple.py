@@ -25,14 +25,33 @@ for number in tup:
 #
 # # printing result
 # print("The unpacked nested tuple list is : " + str(res))
+#
+# tuple1 = ("Orange", [10, 20, 30], (5, 15, 25))
+# (fruit, lst1, tpl) = tuple1
+# lst2 = []
+# lst3 = []
+# lst2.append(lst1.index(lst1[1]) - 1)
+# lst2.append(lst1[1])
+# lst3.append(tpl.index(tpl[2]) - 1)
+# lst3.append(tpl[2])
+# combined = [tuple(lst2), tuple(lst3)]
+# print(tuple(combined))
 
-tuple1 = ("Orange", [10, 20, 30], (5, 15, 25))
-(fruit, lst1, tpl) = tuple1
-lst2 = []
-lst3 = []
-lst2.append(lst1.index(lst1[1]) - 1)
-lst2.append(lst1[1])
-lst3.append(tpl.index(tpl[2]) - 1)
-lst3.append(tpl[2])
-combined = [tuple(lst2), tuple(lst3)]
-print(tuple(combined))
+#
+# tuple1 = (10,20,30,40,50)
+# tuple1 = tuple1[::-1]
+# print(tuple1)
+
+
+# tuple1 = ("Orange", [10, 20, 30], (5, 15, 25))
+# print(tuple1[1][1])
+#
+# numbers = [1, 2, 3, 4, 5, 6]
+# numbers *= 2
+# print(numbers)
+
+
+u = (2,4,6)
+y = (2,4,5)
+sum = u + y
+print(sum)

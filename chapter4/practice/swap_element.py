@@ -19,4 +19,4 @@ new_item = lt[0], lt[7]
 
 print(tuple(new_item))
 
-
+print("hello"+2)
