@@ -1,11 +1,13 @@
-colour_list = ["Red","Green","White","Black"]
-list1 = list
-
-# list1[0] = list1[3]
-# new_list = list[list1]
-#
-# print(new_list)
+def first_last(new_list:list):
+    print("first:",new_list[0])
+    print("last:",new_list[-1])
 
 
-new_list = list1["red"],["black"]
-print(new_list)
+if __name__ == '__main__':
+
+    colour_list = ["Red","Green","White","Black"]
+    first_last(colour_list)
+
+
+
+

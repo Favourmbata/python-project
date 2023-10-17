@@ -5,7 +5,7 @@ numbers1 = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566
             81, 379, 831, 445, 742, 717, 958, 743, 527]
 
 for num in numbers1:
-    if num % 2 == 0:
-        print(num,"number is even\n",end=" ")
-    else:
-        print(num,"number is odd\n",end=" ")
+    if num % 2 == 237:
+        break
+    elif num % 2 == 0:
+        print(f" {num}", end=" ")
