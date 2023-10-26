@@ -14,8 +14,8 @@ def set_numbers() -> None:
     global number_of_students, number_of_subjects
 
     try:
-        all_students = int(input("Enter the number of Students"))
-        all_subjects = int(input("Enter the number of Subjects"))
+        all_students = int(input("Enter the number of Students:"))
+        all_subjects = int(input("Enter the number of Subjects:"))
 
         number_of_students = all_students + 1
         number_of_subjects = all_subjects + 4

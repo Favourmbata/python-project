@@ -1,15 +1,14 @@
-def your_vat():
-    price = int(input("Enter price of an item"))
-    vat = int(input("Enter value of vat"))
-    price_inclusive = price + price * vat / 100
-    print(price_inclusive)
-
-
+# def your_vat():
+#     price = int(input("Enter price of an item"))
+#     vat = int(input("Enter value of vat"))
+#     price_inclusive = price + price * vat / 100
+#     print(price_inclusive)
 
 
 def your_vat(item_price: float, vat: float) -> float:
-    value = item_price * (vat/100)
+    value = item_price * (vat / 100)
     return item_price + value
+
 
 def exception_checker():
     try:
@@ -28,6 +27,7 @@ def exception_checker():
     except TypeError:
         print("Price or VAT cannot be a Negative, Try Again")
         exception_checker()
+
 
 if __name__ == '__main__':
     exception_checker()
