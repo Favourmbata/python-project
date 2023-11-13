@@ -16,15 +16,15 @@
 #
 
 
-# list1 = ['a', 'b', 'c', 'd', 'e']
-# list2 = [1, 2, 3, 4, 5]
-# res = {}
-# for key in list1:
-#     for value in list2:
-#         res[key] = value
-#         list2.remove(value)
-#         break
-# print(str(res))
+list1 = ['a', 'b', 'c', 'd', 'e']
+list2 = [1, 2, 3, 4, 5]
+res = {}
+for key in list1:
+    for value in list2:
+        res[key] = value
+        list2.remove(value)
+        break
+print(str(res))
 
 #
 # list1 = ['a', 'b', 'c', 'd', 'e']
@@ -103,12 +103,12 @@
 # for i in key1.
 
 
-def split(number):
-    half = len(number) // 2
-    return number[:half], number[half:]
-
-
-a = [10, 75, 20, 30, 15, 5, 40, 25, 40, 35]
-b, c = split(a)
-
-print(split())
+# def split(number):
+#     half = len(number) // 2
+#     return number[:half], number[half:]
+#
+#
+# a = [10, 75, 20, 30, 15, 5, 40, 25, 40, 35]
+# b, c = split(a)
+#
+# print(split())

@@ -1,0 +1,4 @@
+with open("demo.txt",mode='w') as file:
+    file.write("ope is a goat\n")
+    file.write("you are a mumu man\n")
+
