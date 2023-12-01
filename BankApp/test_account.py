@@ -1,3 +1,4 @@
+import  unittest
 from unittest import TestCase
 
 from BankApp.InValidPinError import InvalidPinError
@@ -34,5 +35,3 @@ class AccountTest(unittest,TestCase):
     def test_withdraw_more_than_balance(self):
         self.account.deposit(5000)
         self.assertRaises(InvalidAmountError, self.account.withdraw, 6000, '1234')
-
-

@@ -1,3 +1,7 @@
+from BankApp.InValidPinError import InvalidPinError
+from BankApp.amount_less_than_zero import AmountLessThanZero
+from BankApp.invalidAmountError import InvalidAmountError
+
 
 class Account:
     def __init__(self, account_number: str, account_name: str, pin: str):
@@ -19,7 +23,7 @@ class Account:
         if self.__validate_pin(pin):
             return self.__balance
         else:
-            raise IncorrectPin()
+            raise InvalidPinError()
 
     def withdraw(self, amount: int, pin: str):
         if amount > 0:
@@ -27,9 +31,9 @@ class Account:
                 if self.__balance >= amount:
                     self.__balance -= amount
                 else:
-                    raise InsufficientFund()
+                    raise InvalidAmountError()
             else:
-                raise IncorrectPin()
+                raise InvalidPinError()
         else:
             raise AmountLessThanZero()
 
